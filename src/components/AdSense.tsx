@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const AdSens = () => {
+const AdSense = () => {
   return (
     <Script
       async
@@ -10,4 +10,4 @@ const AdSens = () => {
     />
   );
 };
-export default AdSens;
+export default AdSense;
