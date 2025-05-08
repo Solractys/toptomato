@@ -28,10 +28,10 @@ export default function RootLayout({
       <head>
         <Script
           id="google-ads"
-          strategy="afterInteractive"
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9030427245078103"
           crossOrigin="anonymous"
-        />
+        ></Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
