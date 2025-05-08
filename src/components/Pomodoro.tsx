@@ -36,11 +36,11 @@ export default function Pomodoro() {
 
   // Timer logic
   useEffect(() => {
-    let interval: number | undefined;
+    let interval: ReturnType<typeof setInterval>;
 
     if (isActive && timeLeft > 0) {
       interval = setInterval(() => {
-        setTimeLeft(timeLeft - 1);
+        setTimeLeft(prevTime => prevTime - 1);
       }, 1000);
     } else if (isActive && timeLeft === 0) {
       playNotification();
