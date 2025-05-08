@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tomato-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6347" />
+      <stop offset="100%" stop-color="#e82c0c" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tomato Body -->
+  <circle cx="32" cy="32" r="28" fill="url(#tomato-gradient)" />
+  
+  <!-- Tomato Top Stem -->
+  <path d="M32,4 Q38,8 44,8 Q38,0 32,4" fill="#2e7d32" />
+  <path d="M32,4 Q26,8 20,8 Q26,0 32,4" fill="#2e7d32" />
+  
+  <!-- Timer Lines -->
+  <path d="M32,18 L32,32 L42,42" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="transparent" />
+  
+  <!-- Timer Marks -->
+  <circle cx="32" cy="32" r="16" stroke="white" stroke-width="2" fill="transparent" />
+</svg>

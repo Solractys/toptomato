@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect, useRef, ChangeEvent } from "react";
 
 interface TimerSettings {
@@ -21,8 +19,7 @@ export default function Pomodoro() {
   };
 
   const [settings, setSettings] = useState<TimerSettings>(defaultSettings);
-  const [tempSettings, setTempSettings] =
-    useState<TimerSettings>(defaultSettings);
+  const [tempSettings, setTempSettings] = useState<TimerSettings>(defaultSettings);
   const [mode, setMode] = useState<TimerMode>("work");
   const [timeLeft, setTimeLeft] = useState(settings.work * 60);
   const [isActive, setIsActive] = useState(false);
@@ -39,7 +36,7 @@ export default function Pomodoro() {
 
   // Timer logic
   useEffect(() => {
-    let interval: NodeJS.Timeout | null = null;
+    let interval: number | undefined;
 
     if (isActive && timeLeft > 0) {
       interval = setInterval(() => {

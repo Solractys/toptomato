@@ -1,63 +1,81 @@
 # TopTomato - Pomodoro Timer
 
-A simple yet effective Pomodoro timer application built with Next.js and React to help boost productivity using the Pomodoro Technique.
+Um simples e eficiente temporizador Pomodoro para aumentar sua produtividade.
 
-## What is the Pomodoro Technique?
+## Visão Geral
 
-The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, traditionally 25 minutes in length (called "pomodoros"), separated by short breaks. Each interval is known as a pomodoro, from the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used as a university student.
+TopTomato é uma aplicação de temporizador Pomodoro construída com React e Vite. A técnica Pomodoro é um método de gerenciamento de tempo que divide o trabalho em intervalos, tradicionalmente de 25 minutos, separados por pequenas pausas.
 
-## Features
+## Funcionalidades
 
-- Work sessions (default: 25 minutes)
-- Short breaks (default: 5 minutes)
-- Long breaks (default: 15 minutes)
-- Automatic session tracking
-- Visual cues for different timer states
-- Sound notifications when timer completes
-- Customizable timer durations and intervals
-- Responsive design
+- Temporizadores personalizáveis para trabalho, pausas curtas e pausas longas
+- Notificações sonoras ao término de cada sessão
+- Interface responsiva e amigável
+- Modo escuro automático (baseado nas preferências do sistema)
+- Contador de sessões completas
 
-## Getting Started
+## Tecnologias Utilizadas
 
-First, run the development server:
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-```bash
+## Pré-requisitos
+
+- Node.js (versão 14.0 ou superior)
+- npm ou yarn
+
+## Instalação
+
+1. Clone o repositório:
+
+```
+git clone https://github.com/seu-usuario/toptomato.git
+cd toptomato
+```
+
+2. Instale as dependências:
+
+```
+npm install
+# ou
+yarn
+```
+
+3. Inicie o servidor de desenvolvimento:
+
+```
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Abra o navegador em [http://localhost:3000](http://localhost:3000)
 
-## Custom Notification Sound
+## Scripts Disponíveis
 
-The app comes with a placeholder for notification sounds. To use your own sound:
+- `npm run dev`: Inicia o servidor de desenvolvimento
+- `npm run build`: Compila o projeto para produção
+- `npm run preview`: Visualiza a versão compilada localmente
+- `npm run lint`: Executa o linter no código
 
-1. Find a short MP3/WAV file for notifications
-2. Name it `notification.wav`
-3. Place it in the `public` directory
+## Implantação
 
-## How to Use
+Para implantar o projeto em produção:
 
-1. **Start a session** - Click the Start button to begin a work session
-2. **Pause/Resume** - Click the same button to pause or resume the current timer
-3. **Reset** - Click Reset to start over from the beginning of the current session
-4. **Skip** - Click Skip to move to the next session (work → break or break → work)
-5. **Complete a work session** - After each work session, a break will automatically start
-6. **Session counter** - The app tracks how many work sessions you've completed
-7. **Customize settings** - Click the Settings button to adjust work time, break durations, and intervals
-   - Change values using the number inputs
-   - Click "Save Settings" to apply changes
-   - Click "Reset to Default" to restore default values
-   - Click "Cancel" or "Close Settings" to discard changes
+1. Execute o comando de build:
 
-## Tech Stack
+```
+npm run build
+```
 
-- Next.js 15
-- React 19
-- TypeScript
-- Tailwind CSS
+2. Os arquivos compilados serão gerados na pasta `dist`, pronta para implantação em qualquer servidor web estático.
 
-## License
+## Contribuições
 
-This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
